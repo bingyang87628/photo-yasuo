@@ -1,0 +1,12 @@
+image-compressor/
+├── src/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   ├── compress.js
+│   │   ├── preview.js
+│   │   └── utils.js
+│   └── index.html
+├── .gitignore
+├── LICENSE
+└── README.md 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片压缩工具</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>图片压缩工具</h1>
+        
+        <div class="upload-area" id="dropZone">
+            <p>拖拽图片到这里 或 <button id="selectFile">选择文件</button></p>
+            <input type="file" id="fileInput" multiple accept="image/*" hidden>
+        </div>
+
+        <div class="control-panel" hidden>
+            <div class="quality-control">
+                <label for="quality">压缩质量:</label>
+                <input type="range" id="quality" min="0" max="100" value="80">
+                <span id="qualityValue">80%</span>
+            </div>
+        </div>
+
+        <div class="preview-area" id="previewArea"></div>
+        
+        <div class="action-buttons" hidden>
+            <button id="downloadAll">下载全部</button>
+            <button id="reset">重新开始</button>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/compress.js"></script>
+    <script src="js/preview.js"></script>
+</body>
+</html> 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片压缩工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>图片压缩工具</h1>
+        
+        <!-- 拖拽上传区域 -->
+        <div class="drop-zone" id="dropZone">
+            <div class="drop-zone-content">
+                <p>拖拽图片到这里</p>
+                <p>或者</p>
+                <input type="file" id="fileInput" multiple accept="image/*">
+                <label for="fileInput" class="upload-btn">选择图片</label>
+            </div>
+        </div>
+
+        <!-- 压缩设置 -->
+        <div class="compress-settings">
+            <div class="quality-control">
+                <label for="quality">压缩质量:</label>
+                <input type="range" id="quality" min="0" max="100" value="80">
+                <span id="qualityValue">80%</span>
+            </div>
+        </div>
+
+        <!-- 图片预览区域 -->
+        <div class="preview-container" id="previewContainer">
+            <!-- 预览内容将通过 JS 动态添加 -->
+        </div>
+
+        <!-- 批量下载按钮 -->
+        <button id="downloadAll" class="download-btn" disabled>下载所有压缩图片</button>
+    </div>
+
+    <script src="utils.js"></script>
+    <script src="imageCompressor.js"></script>
+    <script src="main.js"></script>
+</body>
+</html> 
