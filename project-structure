@@ -7,6 +7,14 @@ image-compressor/
 │   │   ├── preview.js
 │   │   └── utils.js
 │   └── index.html
+├── docs/
+│   └── preview.png
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── .vscode/
+│   └── settings.json
 ├── .gitignore
+├── .editorconfig
 ├── LICENSE
-└── README.md 
+└── README.md
